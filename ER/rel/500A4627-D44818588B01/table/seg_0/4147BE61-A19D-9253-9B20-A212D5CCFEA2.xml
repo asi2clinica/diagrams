@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4147BE61-A19D-9253-9B20-A212D5CCFEA2" name="pago">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:57:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4C4FDE67-3E03-C20C-D05E-E3EA12AF38D0">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:58:36 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="venta" id="A0246FB1-D1B2-D027-210A-D25B71EE0ED6">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:58:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>70D60DFD-E683-FF10-4BC1-5EAAF6A8A957</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="46FDF048-5781-BB24-81DD-BD939D9F1C98" referredColumn="70D60DFD-E683-FF10-4BC1-5EAAF6A8A957"/>
+</associations>
+</Column>
+<Column name="monto" id="FAB5D09B-D230-B606-E26D-420040BB02C9">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:59:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="saldo" id="F95E78CA-AACD-7203-3890-D369B1BD6EDB">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:59:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="56D454AC-0C46-094A-CB8F-9CB786891289">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:59:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DFCC2703-BA72-1141-B928-E8504DA54D33" name="pago_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:58:36 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C4FDE67-3E03-C20C-D05E-E3EA12AF38D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57F58986-96AD-6D1A-0072-69401BA43F51" name="pago_venta_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:58:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0246FB1-D1B2-D027-210A-D25B71EE0ED6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

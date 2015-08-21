@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="629CF311-4409-E91F-99C0-EB5C1134E8AC" name="cita">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:29:55 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="48D5B93E-942A-EA05-668F-C9B767E6E3DF">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:32:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primera" id="2D9CD368-91D6-CBB1-2573-E29EF61AAEBD">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:35:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="C3EC3614-174B-B473-38A6-FEC7D1C9B3AD">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:32:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacion" id="A52F55C3-D114-1B54-3249-D84599EDD8EB">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:32:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doctor" id="97B81D5E-74DD-81C1-D88C-51A5FF1D1029">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:33:19 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>097908B4-E75B-045F-9BE5-0977D13F8EFC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9F06496-B91B-96BB-3794-32A0637EB523" referredColumn="097908B4-E75B-045F-9BE5-0977D13F8EFC"/>
+</associations>
+</Column>
+<Column name="paciente" id="E72B2ECD-F671-1458-1429-C562788CF903">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:34:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D875C893-BED3-9087-F106-63E5887780D0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AC94AED-ED89-9EAE-74AF-EF93257ACA0E" referredColumn="D875C893-BED3-9087-F106-63E5887780D0"/>
+</associations>
+</Column>
+<Column name="consultorio" id="3EAB091A-37A7-56A5-40C1-C793F2949D75">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:39:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DC27E495-1422-D005-DF15-C0B00756C408</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15C953DB-EE51-CFB2-C038-C7F0FC71DA23" referredColumn="DC27E495-1422-D005-DF15-C0B00756C408"/>
+</associations>
+</Column>
+<Column name="estado_cita" id="8DF475D2-033E-910F-5F44-90BE809D1F05">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:47:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>4F27852E-910C-2B38-401D-C8C105020E47</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="671BE040-DD7B-9450-FE64-7131D8DCD992" referredColumn="4F27852E-910C-2B38-401D-C8C105020E47"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DC2130F-74E4-5A6E-84BB-4B42A7066BEE" name="cita_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:32:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48D5B93E-942A-EA05-668F-C9B767E6E3DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4CA8841-C268-8DE4-61AE-CE67F8F3CC65" name="cita_doctor_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:33:19 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97B81D5E-74DD-81C1-D88C-51A5FF1D1029"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB511C61-F5B7-5FCB-2BF2-A4C4AE51878B" name="cita_paciente_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:34:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E72B2ECD-F671-1458-1429-C562788CF903"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75511D1C-1E0F-07CB-3EDC-EC469AE2941B" name="cita_consultorio_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:39:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EAB091A-37A7-56A5-40C1-C793F2949D75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="362BB4EC-9720-0FB1-901D-9324659E0821" name="cita_estados_cita_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:47:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DF475D2-033E-910F-5F44-90BE809D1F05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

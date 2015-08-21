@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E0478435-65CB-F99B-AEF6-5B491EC5F360" name="odontograma_piezas_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:54:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<containerWithKeyObject>7A965200-5477-8CD8-B7C5-A1532AB7BA82</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>CF4A14B1-2F7C-823A-D346-0970973C70A8</localFKIndex>
+<keyObject>E08B0519-8D6D-B11B-CC53-427A100CE15C</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

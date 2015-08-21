@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56375897-9B78-3407-AA9B-279E9635657F" name="respuesta">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:59:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="239F2280-2C2D-F825-0586-0B19CD0147DA">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:59:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pregunta" id="FDEFBF15-BFB4-E98A-E062-8E8092983C6C">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:00:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1EEF87BC-D355-4FC8-A2BA-60438C6075E6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35ED497D-D961-4470-2ECF-0338CDD6BD12" referredColumn="1EEF87BC-D355-4FC8-A2BA-60438C6075E6"/>
+</associations>
+</Column>
+<Column name="sino" id="C7E373ED-A116-9AF0-38DB-08B8E34A7F66">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:03:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="respuesta_abierta" id="5E2D8212-0966-B8ED-BCFC-B84280C94486">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:03:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cita_id" id="FC083C28-C636-C276-2512-05372A4EE8EB">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:04:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>48D5B93E-942A-EA05-668F-C9B767E6E3DF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27E64B58-86B9-4A8A-210B-3A317C4BD378" referredColumn="48D5B93E-942A-EA05-668F-C9B767E6E3DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DD36D8A-984B-D27B-1AD9-E2A09256A89B" name="respuesta_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:59:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="239F2280-2C2D-F825-0586-0B19CD0147DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BE241A6-A08D-D759-2AFA-DF75F39A43EE" name="respuesta_pregunta_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:00:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDEFBF15-BFB4-E98A-E062-8E8092983C6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED2BA0CA-3288-EC2F-02AF-21EF7261871B" name="respuesta_cita_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:04:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC083C28-C636-C276-2512-05372A4EE8EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

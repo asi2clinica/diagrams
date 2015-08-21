@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3270EBE7-ECD5-81B7-A48F-25BD4CF21E67" name="movimiento">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:06:18 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A95869B5-3199-D848-C8D0-6D6E85654B86">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:08:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="8E1B2F1F-BBF7-DE83-447C-5001E0ABDE10">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:08:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="F5ECC251-A61A-B03F-67E9-6A4B962446D9">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:08:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="referencia" id="EEE8D371-82EF-DCF5-8DDF-986108231289">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:08:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacion" id="9936E4EE-6B8A-5FD3-34E8-C9E53FE330D4">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:08:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="consultorio" id="D6F44B4D-09FD-98DB-D9E7-5E74162F181D">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:10:30 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DC27E495-1422-D005-DF15-C0B00756C408</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D0BDC5-1F78-26FD-13C9-99B2FC633DE0" referredColumn="DC27E495-1422-D005-DF15-C0B00756C408"/>
+</associations>
+</Column>
+<Column name="venta" id="54D5798B-2D5B-B26C-CF8E-CBD068DBF402">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:57:33 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>70D60DFD-E683-FF10-4BC1-5EAAF6A8A957</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9315CA00-499A-6D67-3C79-D705AC02C9B4" referredColumn="70D60DFD-E683-FF10-4BC1-5EAAF6A8A957"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7422D0AD-5012-4133-336F-6BE7A6677CC1" name="movimiento_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:08:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A95869B5-3199-D848-C8D0-6D6E85654B86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CB8210D-CFBF-5FAB-CE44-6462594B9DE0" name="movimiento_consultorio_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:10:30 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6F44B4D-09FD-98DB-D9E7-5E74162F181D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEA5F506-F647-25A1-8FBA-FA4C9DC7F9F0" name="movimiento_venta_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:57:33 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54D5798B-2D5B-B26C-CF8E-CBD068DBF402"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

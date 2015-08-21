@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB2C1493-07DF-A26A-8636-D102CD603AD2" name="documento_persona">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:25:36 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="persona" id="AA8200DA-A0AF-E571-7AD3-C88CAB7C65E8">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:25:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>04D60909-6918-AD82-CD82-079587F7C495</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B70CC389-BBA8-E965-1418-48AC6CC47DCC" referredColumn="04D60909-6918-AD82-CD82-079587F7C495"/>
+</associations>
+</Column>
+<Column name="tipo_documento" id="874AA8DC-3B40-5910-A113-7C0C009CDCBF">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:28:12 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1275861D-AD08-BE65-93F8-DF66E35FE02B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1FCCF6B-80AC-0BB6-A965-50B167D65DB6" referredColumn="1275861D-AD08-BE65-93F8-DF66E35FE02B"/>
+</associations>
+</Column>
+<Column name="numero" id="281C6BEB-C97C-891E-E8EF-78456BCE54EE">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:29:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3A2ED34-2C6E-4062-873A-333E8748069D" name="documento_persona_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:43:36 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA8200DA-A0AF-E571-7AD3-C88CAB7C65E8"/>
+<colUsage columnID="874AA8DC-3B40-5910-A113-7C0C009CDCBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD44DB6F-33AD-F69D-F2A0-3CCAF12237B4" name="documento_persona_persona_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:25:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA8200DA-A0AF-E571-7AD3-C88CAB7C65E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DDDD995-6F53-86F0-F2E4-06AD4EF4F2D4" name="documento_persona_tipo_documento_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:28:12 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="874AA8DC-3B40-5910-A113-7C0C009CDCBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

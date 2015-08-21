@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68656F66-AD02-B272-48A0-8306ED47D59E" name="telefono">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:29:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="428E2EE0-EFDD-F02E-C8FC-3ABF3EE3AC3C">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:30:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="30DCF4DF-B74B-C3E9-C64C-17B52AAAB040">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:30:46 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="persona" id="AA7D241F-D6A0-1EE5-1413-88206E374543">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:29:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>04D60909-6918-AD82-CD82-079587F7C495</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61F82553-14A0-CFE3-08E6-93FFF6FD320F" referredColumn="04D60909-6918-AD82-CD82-079587F7C495"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AE9025A-3320-9D97-EBFF-6B54AE367381" name="telefono_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:30:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="428E2EE0-EFDD-F02E-C8FC-3ABF3EE3AC3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D8818A3-3468-E7EE-A13D-6C8DF4C867DC" name="telefono_persona_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:29:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA7D241F-D6A0-1EE5-1413-88206E374543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

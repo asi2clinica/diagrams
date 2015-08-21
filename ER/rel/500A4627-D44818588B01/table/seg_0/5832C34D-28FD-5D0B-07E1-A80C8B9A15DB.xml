@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5832C34D-28FD-5D0B-07E1-A80C8B9A15DB" name="venta">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:54:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="70D60DFD-E683-FF10-4BC1-5EAAF6A8A957">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:55:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_pago" id="A56938F7-26B5-BD99-F958-20A2BACC5A94">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:55:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="180A09F9-3B06-882A-3317-0FBFBA7D80A6">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:55:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cuotas" id="92674F3E-91D6-5BEF-865F-9710C1A86812">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:56:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto" id="22A97316-09AC-BA35-1965-02A8FC9F6282">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:56:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cita_id" id="A9CF2F43-E73F-491D-DEEE-6008DAE51685">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 07:00:19 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>48D5B93E-942A-EA05-668F-C9B767E6E3DF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA01DC99-C482-54EC-E49E-75F9C9FFF993" referredColumn="48D5B93E-942A-EA05-668F-C9B767E6E3DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82DEE389-2980-6ADA-6F17-BBE156572D60" name="venta_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:57:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70D60DFD-E683-FF10-4BC1-5EAAF6A8A957"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C688011F-13C0-8A55-CA74-696B4BEFE24C" name="venta_cita_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 07:00:19 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9CF2F43-E73F-491D-DEEE-6008DAE51685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

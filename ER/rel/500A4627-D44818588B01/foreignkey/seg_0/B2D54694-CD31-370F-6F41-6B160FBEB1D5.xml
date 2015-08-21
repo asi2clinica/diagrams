@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2D54694-CD31-370F-6F41-6B160FBEB1D5" name="odontograma_paciente_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:53:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<containerWithKeyObject>7A965200-5477-8CD8-B7C5-A1532AB7BA82</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>7AEB3EA0-AD1A-61CA-41FD-0BB3A739884F</localFKIndex>
+<keyObject>BA45E985-1FDF-F118-DE55-31B7B13918CC</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

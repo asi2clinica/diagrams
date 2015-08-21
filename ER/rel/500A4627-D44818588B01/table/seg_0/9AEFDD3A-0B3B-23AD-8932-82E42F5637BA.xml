@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9AEFDD3A-0B3B-23AD-8932-82E42F5637BA" name="persona">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:46:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="04D60909-6918-AD82-CD82-079587F7C495">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:47:12 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C1C7CE6A-6650-F02F-A0DC-2319AF1F2144">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:48:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="B872F878-59C1-EE6C-074E-3EDD4B337B50">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:48:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="827C9545-D856-0235-9DDA-65504043A383">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:50:40 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="C0EB021F-1253-78D0-23AB-154EB2A167A1">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:49:52 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="D4F9736E-E3AD-DC47-22CD-F026B5CB5955">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:50:09 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_registro" id="5D34E9BF-BEB1-4A92-AD3B-E460E9D3E475">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:51:04 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="CC363759-AFD1-BBED-7231-89EF0F5A3511">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:22:27 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>180</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="municipio" id="EA43AF85-07F0-1057-23EE-183A9A9D5484">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:17:48 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6D0B84AF-D193-6AD3-B424-C8B92CAE2C42</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="910F8CFE-5CB7-5061-FEFC-C041CC9D473B" referredColumn="6D0B84AF-D193-6AD3-B424-C8B92CAE2C42"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9DF84E4-F1EB-99B4-C247-D8E03A5E1772" name="persona_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:51:27 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04D60909-6918-AD82-CD82-079587F7C495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61FEA16F-273F-B1BE-2DA6-077D3D81149D" name="persona_municipio_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:17:48 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA43AF85-07F0-1057-23EE-183A9A9D5484"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

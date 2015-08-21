@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2ED1CCA8-FBD6-A52F-E946-A29AE84B7D1F" name="producto_cita">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:11:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="producto" id="A07C2E04-B8FD-4D30-AA2E-0016D70FE4AB">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:13:37 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6349B947-5FDF-E48B-9458-A10136798CDA</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB8EFCCF-1488-3D4D-1947-867E665BF408" referredColumn="6349B947-5FDF-E48B-9458-A10136798CDA"/>
+</associations>
+</Column>
+<Column name="cita" id="20D7CF62-38C9-A51C-27EC-5B1DD4E85BA2">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:14:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>48D5B93E-942A-EA05-668F-C9B767E6E3DF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF20281C-8575-80F8-BB70-8B4CFB91821B" referredColumn="48D5B93E-942A-EA05-668F-C9B767E6E3DF"/>
+</associations>
+</Column>
+<Column name="cantidad" id="DD9BA18D-8657-EA98-A90C-0B1572159470">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:15:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE59E899-2735-1712-8C74-22EA296AF1AD" name="producto_cita_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:15:29 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A07C2E04-B8FD-4D30-AA2E-0016D70FE4AB"/>
+<colUsage columnID="20D7CF62-38C9-A51C-27EC-5B1DD4E85BA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26C95977-F2DE-FD60-4BE8-5B84A20593AB" name="producto_cita_producto_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:13:37 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A07C2E04-B8FD-4D30-AA2E-0016D70FE4AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF0E2382-AFE2-9185-F430-574B03F7F50E" name="producto_cita_cita_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:14:41 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20D7CF62-38C9-A51C-27EC-5B1DD4E85BA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

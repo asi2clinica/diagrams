@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D5E34EC-D27A-9C20-0510-4794C0D9153A" name="paciente">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:52:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D875C893-BED3-9087-F106-63E5887780D0">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:53:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="foto" id="271507D6-4154-C951-1532-A1A351BAF506">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:53:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="refiere" id="58B92AD0-D04F-669D-01DB-684BA72AAE93">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:53:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="6D9E3924-CCF1-8AC8-25D1-FBF48FF3CC98">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:53:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_paciente" id="C2C1C677-5D77-9A4D-9A04-5BDE2713CD4B">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:57:45 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>33BABA31-C54A-0BB5-D2BF-C6324D80527E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AF57057-C46B-F9D7-FD53-14F80733BC42" referredColumn="33BABA31-C54A-0BB5-D2BF-C6324D80527E"/>
+</associations>
+</Column>
+<Column name="persona" id="1D3F0800-9971-B398-9D5B-FD1E7F01BBB3">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:59:24 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>04D60909-6918-AD82-CD82-079587F7C495</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B12F977-DD53-0C09-EAA4-5500045E494B" referredColumn="04D60909-6918-AD82-CD82-079587F7C495"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA45E985-1FDF-F118-DE55-31B7B13918CC" name="paciente_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:53:22 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D875C893-BED3-9087-F106-63E5887780D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F96F806-2701-7F7C-A5FC-EC00F792B86F" name="paciente_tipo_paciente_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:57:45 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2C1C677-5D77-9A4D-9A04-5BDE2713CD4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="662ED205-6CBE-4839-55FD-2CB6DE4333CB" name="paciente_persona_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 03:59:24 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D3F0800-9971-B398-9D5B-FD1E7F01BBB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

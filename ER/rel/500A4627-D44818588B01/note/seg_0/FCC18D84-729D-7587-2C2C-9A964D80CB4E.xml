@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Note class="oracle.dbtools.crest.model.design.Note" name="Note_1" directorySegmentName="seg_0" id="FCC18D84-729D-7587-2C2C-9A964D80CB4E">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 15:55:58 UTC</createdTime>
+<comment>detalle del precio,  --&gt; y esta solo existe cuando son salidas.&lt;br/&gt;referencia a detalle(detalle_salida), para saber el movimiento que se esta haciendo.&lt;br/&gt;referencia a detalle(detalle_entrada), para saber a que precios sale&lt;br/&gt;</comment>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+</Note>

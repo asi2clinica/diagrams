@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0D5A5EA-B0CD-B962-FA29-0A32EC428C02" name="doctor_especialidad">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:42:33 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doctor" id="650FB3A9-FFDF-C101-FCFF-126636A6C72E">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:42:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>097908B4-E75B-045F-9BE5-0977D13F8EFC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8B77D73-559E-8D08-582C-A8F7A4E9DE72" referredColumn="097908B4-E75B-045F-9BE5-0977D13F8EFC"/>
+</associations>
+</Column>
+<Column name="escpecialidad" id="10CBF3FB-A008-8F35-8BFC-0832539F635B">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:43:04 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>734E88EC-98F6-B998-F402-4EE05F67CF55</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DFCA8F8-068F-C84E-0332-5A7FD052C468" referredColumn="734E88EC-98F6-B998-F402-4EE05F67CF55"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E15F5A2-78BC-1F29-3B65-754BF9C0062A" name="doctor_especialidad_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:43:23 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="650FB3A9-FFDF-C101-FCFF-126636A6C72E"/>
+<colUsage columnID="10CBF3FB-A008-8F35-8BFC-0832539F635B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2EDF414C-C633-61EB-0CDE-AD57A9199E23" name="doctor_especialidad_doctor_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:42:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="650FB3A9-FFDF-C101-FCFF-126636A6C72E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A4DE555-A3F9-5F0B-04F0-F1AD7C151316" name="doctor_especialidad_escpecialidad_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:43:04 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10CBF3FB-A008-8F35-8BFC-0832539F635B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

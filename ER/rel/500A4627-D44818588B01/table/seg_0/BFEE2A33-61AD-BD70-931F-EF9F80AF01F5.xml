@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFEE2A33-61AD-BD70-931F-EF9F80AF01F5" name="empleado">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:05:20 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="persona" id="88A6A37E-C392-2EBE-3E9E-B719E17F5472">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:05:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>04D60909-6918-AD82-CD82-079587F7C495</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A3F799B2-E887-B28B-8A0B-B3900A8832F0" referredColumn="04D60909-6918-AD82-CD82-079587F7C495"/>
+</associations>
+</Column>
+<Column name="codigo" id="E524BA50-8BE1-2639-5B25-EDACCB72D729">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:06:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salario" id="95D4ADEF-055A-0081-7DE9-7B350E1E5C2D">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:07:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="activo" id="3746AA0F-53F2-6F92-0D05-929C0BA7DA20">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:07:45 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04E14B47-3C98-4E52-EB11-8274969F4E9E" name="empleado_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:06:15 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88A6A37E-C392-2EBE-3E9E-B719E17F5472"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A791E02-4415-678A-A4A1-8F8D503BECE7" name="empleado_persona_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:05:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88A6A37E-C392-2EBE-3E9E-B719E17F5472"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

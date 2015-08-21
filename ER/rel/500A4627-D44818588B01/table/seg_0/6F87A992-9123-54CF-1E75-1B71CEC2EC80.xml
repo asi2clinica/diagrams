@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F87A992-9123-54CF-1E75-1B71CEC2EC80" name="trabajo_cita">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:53:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A7B8F9EA-DF31-004D-826D-C265CCB550CC">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:42:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cita" id="9F40A43C-58B0-4582-09F4-D1494B2657FA">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:53:48 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>48D5B93E-942A-EA05-668F-C9B767E6E3DF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58644802-E390-387B-E2FF-015EA6249B24" referredColumn="48D5B93E-942A-EA05-668F-C9B767E6E3DF"/>
+</associations>
+</Column>
+<Column name="trabajo" id="196E9BC4-AFCA-E486-6EE2-7A5E8D9F60AC">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:53:55 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A62B7B32-1734-160D-E3A4-86013D242D96</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D89EDFB1-2493-02F0-257E-82142862EF21" referredColumn="A62B7B32-1734-160D-E3A4-86013D242D96"/>
+</associations>
+</Column>
+<Column name="observacion" id="3794039E-E0BF-DC6C-BA06-F77E85DD4710">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:55:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="389F7C4E-302B-7CFD-7B5C-72803C46ACCC">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:50:57 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trabajo_cita" id="9B6F6B5F-55DD-FFF6-126F-8BAE15D1B003">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:51:08 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>A7B8F9EA-DF31-004D-826D-C265CCB550CC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D348BD0C-1882-3573-8FBA-3B48CE023226" referredColumn="A7B8F9EA-DF31-004D-826D-C265CCB550CC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32B95AE1-0074-600F-3DF7-54451486870E" name="trabajo_cita_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 05:15:49 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7B8F9EA-DF31-004D-826D-C265CCB550CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D358BB8-022E-EF90-D279-150EFAF03B9B" name="trabajo_cita_cita_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:53:48 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F40A43C-58B0-4582-09F4-D1494B2657FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C11BA7A-4727-A887-CC62-C6655BBFE9C5" name="trabajo_cita_trabajo_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:53:55 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="196E9BC4-AFCA-E486-6EE2-7A5E8D9F60AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B0FEA37-2E19-1B12-06AB-311A53B68042" name="trabajo_cita_trabajo_cita_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 06:51:08 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B6F6B5F-55DD-FFF6-126F-8BAE15D1B003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

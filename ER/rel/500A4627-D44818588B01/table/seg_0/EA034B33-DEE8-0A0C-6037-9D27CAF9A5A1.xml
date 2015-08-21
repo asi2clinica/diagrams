@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA034B33-DEE8-0A0C-6037-9D27CAF9A5A1" name="consultorio">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:36:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="DC27E495-1422-D005-DF15-C0B00756C408">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:37:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E2183753-E6AB-C17C-D313-17D789569C92">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:37:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="FBD40A53-F444-EF0A-1771-95833E069350">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:37:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tel" id="080D5F74-4888-15B4-4E2A-FAA93D967DD1">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:37:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mail" id="EDD07938-C4AB-B569-F2AB-35B8885C868D">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:38:27 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>180</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="encargado" id="A7A98E47-D1F4-3439-91D2-CC2AE41855B5">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:39:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>88A6A37E-C392-2EBE-3E9E-B719E17F5472</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80C57031-37BC-7D61-A999-277CD1848A9D" referredColumn="88A6A37E-C392-2EBE-3E9E-B719E17F5472"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B24296E5-731B-33F9-9CC7-2D7D8DD538BD" name="consultorio_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:37:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC27E495-1422-D005-DF15-C0B00756C408"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D87FFCE5-F026-20AE-9B0A-F708CDED3415" name="consultorio_empleado_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:39:11 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7A98E47-D1F4-3439-91D2-CC2AE41855B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A965200-5477-8CD8-B7C5-A1532AB7BA82" name="odontograma">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:53:26 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="paciente" id="D644A051-2CC3-B390-D097-14A267D7BDB3">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:53:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D875C893-BED3-9087-F106-63E5887780D0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2D54694-CD31-370F-6F41-6B160FBEB1D5" referredColumn="D875C893-BED3-9087-F106-63E5887780D0"/>
+</associations>
+</Column>
+<Column name="piezas" id="59D4A2E7-1026-36C2-1C32-AACF0C68277C">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:54:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>66BE3803-0DD5-BF66-53E4-375F556B12C6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0478435-65CB-F99B-AEF6-5B491EC5F360" referredColumn="66BE3803-0DD5-BF66-53E4-375F556B12C6"/>
+</associations>
+</Column>
+<Column name="estado_pieza" id="F9CC109C-8D09-5F3E-FBFA-F19A5DE8A06D">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:54:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>16528D1A-BA88-C1C5-DBA7-CB0BC364DD9E</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BBA22F9-4FBA-E100-FB76-79109366D653" referredColumn="16528D1A-BA88-C1C5-DBA7-CB0BC364DD9E"/>
+</associations>
+</Column>
+<Column name="fecha" id="C453BADA-756F-2D23-B8A1-334F10E004A4">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:55:31 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48E192C3-9EC3-5A8F-1C66-5169D5E63034" name="odontograma_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:56:01 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D644A051-2CC3-B390-D097-14A267D7BDB3"/>
+<colUsage columnID="59D4A2E7-1026-36C2-1C32-AACF0C68277C"/>
+<colUsage columnID="F9CC109C-8D09-5F3E-FBFA-F19A5DE8A06D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AEB3EA0-AD1A-61CA-41FD-0BB3A739884F" name="odontograma_paciente_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:53:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D644A051-2CC3-B390-D097-14A267D7BDB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF4A14B1-2F7C-823A-D346-0970973C70A8" name="odontograma_piezas_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:54:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59D4A2E7-1026-36C2-1C32-AACF0C68277C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B8B16BB-A2A1-3A15-73EA-70664BEE2BFF" name="odontograma_estado_pieza_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 02:54:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9CC109C-8D09-5F3E-FBFA-F19A5DE8A06D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

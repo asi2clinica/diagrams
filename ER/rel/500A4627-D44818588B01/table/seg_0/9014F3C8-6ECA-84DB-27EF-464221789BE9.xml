@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9014F3C8-6ECA-84DB-27EF-464221789BE9" name="depto">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:14:12 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="38636B9F-8224-485D-B475-B6804FBBC193">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:15:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="3E050E77-DC40-1376-C87E-0ED1FDDB36A1">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:15:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>180</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pais_id" id="A65C98CF-93ED-EB50-CE5E-248855D310FE">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:15:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>23811226-8711-345C-1C79-269E6102EE67</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA632ACA-C82C-31AA-04C2-EE9C329236C9" referredColumn="23811226-8711-345C-1C79-269E6102EE67"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BB5C9F1-AD80-D09D-DA0B-412FA342198A" name="depto_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:15:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38636B9F-8224-485D-B475-B6804FBBC193"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A837E17-36C7-8CB4-CA44-2D8605791023" name="depto_pais_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-18 04:15:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A65C98CF-93ED-EB50-CE5E-248855D310FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
