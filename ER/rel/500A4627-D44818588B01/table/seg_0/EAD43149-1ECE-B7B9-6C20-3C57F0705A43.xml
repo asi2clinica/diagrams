@@ -54,4 +54,13 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="producto_activo_CK" directorySegmentName="seg_0" id="EBD15DFE-3196-B72E-27BA-07A86DE7022E">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 17:40:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<rule>activo =&apos;1&apos; or activo =&apos;0&apos;</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

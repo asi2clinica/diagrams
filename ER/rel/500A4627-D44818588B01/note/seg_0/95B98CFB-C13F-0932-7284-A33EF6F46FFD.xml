@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<Note class="oracle.dbtools.crest.model.design.Note" name="Note_4" directorySegmentName="seg_0" id="95B98CFB-C13F-0932-7284-A33EF6F46FFD">
-<createdBy>alex</createdBy>
-<createdTime>2015-08-18 16:22:38 UTC</createdTime>
-<comment>Estados.&lt;br/&gt;    Realizado&lt;br/&gt;    Pendiente.&lt;br/&gt;    Trasladado.</comment>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-</Note>

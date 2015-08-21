@@ -67,7 +67,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E93EE87E-4275-7E1C-2FB4-7EE6F3D575EF"/>
+<colUsage columnID="72A208AE-D717-E33F-2B31-D719AB1E83C2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="81230C34-CE2C-6436-63D6-C6BAB770C54D" name="usuario_empleado_FK">

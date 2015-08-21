@@ -1,55 +1,28 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="040A3140-B76B-B242-9480-355E818C012A" name="detalle_precio">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4BCFA136-81DE-C22C-DA06-CF1C9991E3B3" name="existencia">
 <createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:43:26 UTC</createdTime>
+<createdTime>2015-08-21 17:44:38 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="EE832017-1CFE-C8C5-918F-A5CF77A4F22E">
+<Column name="precio" id="59F946D5-88C4-A51C-2D36-4CC5C09C441F">
 <createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:46:21 UTC</createdTime>
+<createdTime>2015-08-21 17:45:00 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="detalle_entrada" id="DC6C3E2A-FB6F-28C7-8F5D-2AA3CF7459A1">
+<Column name="existencia" id="4A10E333-2473-C061-E2E8-AEDF72935C95">
 <createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:44:43 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>FC78A146-1E78-5DA4-9A59-3F94B376593F</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B4979772-72BD-15C0-F3AA-473BEE096AC1" referredColumn="FC78A146-1E78-5DA4-9A59-3F94B376593F"/>
-</associations>
-</Column>
-<Column name="detalle_salida" id="346881AE-2115-DD17-3637-C3E9295E3EC1">
-<createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:44:51 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>FC78A146-1E78-5DA4-9A59-3F94B376593F</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="C14031D7-BCEE-9261-3594-0AFCCC13E498" referredColumn="FC78A146-1E78-5DA4-9A59-3F94B376593F"/>
-</associations>
-</Column>
-<Column name="cantidad" id="7A81E3E0-039B-5F81-E97B-09D6EB21639B">
-<createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:46:53 UTC</createdTime>
+<createdTime>2015-08-21 17:47:41 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -58,40 +31,58 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="sucursal_id" id="3DA7CE71-0FC0-EE35-9168-77E54CF7CCC5">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 17:50:15 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DC27E495-1422-D005-DF15-C0B00756C408</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="78F95FB3-2651-C353-65AA-7373FD510F0B" referredColumn="DC27E495-1422-D005-DF15-C0B00756C408"/>
+</associations>
+</Column>
+<Column name="producto_id" id="DE7805B6-7A1F-E320-8099-86D9CE8CA6C3">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 17:53:38 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6349B947-5FDF-E48B-9458-A10136798CDA</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C9640FB-0D59-B46F-2C73-66A7B293DE51" referredColumn="6349B947-5FDF-E48B-9458-A10136798CDA"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="52EFB2EE-0BAC-E963-EBD0-C8DC41858DCF" name="detalle_precio_PK">
+<ind_PK_UK id="DFA1B732-1DC1-AF2B-570D-2D0016574499" name="existencia_sucursal_FK">
 <createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:46:21 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<pk>true</pk>
-<indexState>Primary Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EE832017-1CFE-C8C5-918F-A5CF77A4F22E"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="8B5320ED-2E08-A723-1142-888C89C62413" name="detalle_precio_detalle_FK">
-<createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:44:43 UTC</createdTime>
+<createdTime>2015-08-21 17:50:15 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DC6C3E2A-FB6F-28C7-8F5D-2AA3CF7459A1"/>
+<colUsage columnID="3DA7CE71-0FC0-EE35-9168-77E54CF7CCC5"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BE068F4A-2B94-B673-D9A1-2453FA119D22" name="detalle_precio_detalle_FKv1">
+<ind_PK_UK id="AAEC3331-44BB-BA34-A6C5-FBD5FF9010C5" name="existencia_producto_FK">
 <createdBy>alex</createdBy>
-<createdTime>2015-08-18 15:44:51 UTC</createdTime>
+<createdTime>2015-08-21 17:53:38 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="346881AE-2115-DD17-3637-C3E9295E3EC1"/>
+<colUsage columnID="DE7805B6-7A1F-E320-8099-86D9CE8CA6C3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

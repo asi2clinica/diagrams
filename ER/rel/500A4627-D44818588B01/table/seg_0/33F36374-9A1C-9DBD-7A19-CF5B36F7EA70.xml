@@ -12,8 +12,9 @@
 <createdTime>2015-08-18 16:15:24 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="precio" id="F801D852-6539-ABA7-2CC5-5C09C975CE45">
@@ -22,7 +23,11 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="activo" id="EA70EB9B-4ACB-466C-50CE-80787C45A854">
@@ -31,7 +36,10 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="fecha" id="1F7450CA-093B-1518-A949-8E40351A8493">
@@ -40,7 +48,9 @@
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<use>0</use>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="producto_id" id="D140582A-54B7-6B9B-EDEB-FFF38C9F07AB">
@@ -60,6 +70,18 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="69A0D2C7-1C6F-D5FF-A83B-D54B7E0CABAA" name="producto_precio_PK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 17:39:05 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1244079A-9D37-FD7A-2B2C-AC2BBC623211"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="92A7CF1C-F1DE-E7A0-A5AA-E95168595B0B" name="producto_precio_producto_FK">
 <createdBy>alex</createdBy>
 <createdTime>2015-08-18 16:15:29 UTC</createdTime>

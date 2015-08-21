@@ -65,22 +65,7 @@
 <colAssociation fkAssociation="E9F06496-B91B-96BB-3794-32A0637EB523" referredColumn="097908B4-E75B-045F-9BE5-0977D13F8EFC"/>
 </associations>
 </Column>
-<Column name="paciente" id="E72B2ECD-F671-1458-1429-C562788CF903">
-<createdBy>alex</createdBy>
-<createdTime>2015-08-18 04:34:01 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>D875C893-BED3-9087-F106-63E5887780D0</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4AC94AED-ED89-9EAE-74AF-EF93257ACA0E" referredColumn="D875C893-BED3-9087-F106-63E5887780D0"/>
-</associations>
-</Column>
-<Column name="consultorio" id="3EAB091A-37A7-56A5-40C1-C793F2949D75">
+<Column name="sucursal" id="3EAB091A-37A7-56A5-40C1-C793F2949D75">
 <createdBy>alex</createdBy>
 <createdTime>2015-08-18 04:39:57 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
@@ -108,6 +93,21 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="671BE040-DD7B-9450-FE64-7131D8DCD992" referredColumn="4F27852E-910C-2B38-401D-C8C105020E47"/>
+</associations>
+</Column>
+<Column name="paciente_persona" id="4B652D14-80B4-0C47-2940-51F92BD008C7">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 16:56:59 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1D3F0800-9971-B398-9D5B-FD1E7F01BBB3</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AC94AED-ED89-9EAE-74AF-EF93257ACA0E" referredColumn="1D3F0800-9971-B398-9D5B-FD1E7F01BBB3"/>
 </associations>
 </Column>
 </columns>
@@ -143,7 +143,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E72B2ECD-F671-1458-1429-C562788CF903"/>
+<colUsage columnID="4B652D14-80B4-0C47-2940-51F92BD008C7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="75511D1C-1E0F-07CB-3EDC-EC469AE2941B" name="cita_consultorio_FK">

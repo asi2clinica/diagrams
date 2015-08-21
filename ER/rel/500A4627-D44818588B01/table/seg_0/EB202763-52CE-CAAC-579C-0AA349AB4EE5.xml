@@ -22,7 +22,7 @@
 <colAssociation fkAssociation="E171B1A5-4583-93FB-DE51-D5868CF373B5" referredColumn="88A6A37E-C392-2EBE-3E9E-B719E17F5472"/>
 </associations>
 </Column>
-<Column name="n_jvp" id="B03E773F-9AF5-B7A0-F841-CAE707931244">
+<Column name="n_jvpm" id="B03E773F-9AF5-B7A0-F841-CAE707931244">
 <createdBy>alex</createdBy>
 <createdTime>2015-08-18 04:20:59 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>

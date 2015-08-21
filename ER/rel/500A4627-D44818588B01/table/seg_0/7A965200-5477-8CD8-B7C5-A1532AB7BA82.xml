@@ -7,6 +7,16 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="2BC51061-9B64-91D6-32DD-3E5965138072">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 17:03:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="paciente" id="D644A051-2CC3-B390-D097-14A267D7BDB3">
 <createdBy>alex</createdBy>
 <createdTime>2015-08-21 02:53:53 UTC</createdTime>
@@ -15,12 +25,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>D875C893-BED3-9087-F106-63E5887780D0</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B2D54694-CD31-370F-6F41-6B160FBEB1D5" referredColumn="D875C893-BED3-9087-F106-63E5887780D0"/>
-</associations>
 </Column>
 <Column name="piezas" id="59D4A2E7-1026-36C2-1C32-AACF0C68277C">
 <createdBy>alex</createdBy>
@@ -63,6 +69,21 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="paciente_persona" id="2DD75616-ADC0-C2EB-7692-8ED653EA8C93">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 16:56:59 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>1D3F0800-9971-B398-9D5B-FD1E7F01BBB3</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2D54694-CD31-370F-6F41-6B160FBEB1D5" referredColumn="1D3F0800-9971-B398-9D5B-FD1E7F01BBB3"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="48E192C3-9EC3-5A8F-1C66-5169D5E63034" name="odontograma_PK">
@@ -74,9 +95,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D644A051-2CC3-B390-D097-14A267D7BDB3"/>
-<colUsage columnID="59D4A2E7-1026-36C2-1C32-AACF0C68277C"/>
-<colUsage columnID="F9CC109C-8D09-5F3E-FBFA-F19A5DE8A06D"/>
+<colUsage columnID="2BC51061-9B64-91D6-32DD-3E5965138072"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="7AEB3EA0-AD1A-61CA-41FD-0BB3A739884F" name="odontograma_paciente_FK">
@@ -87,7 +106,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D644A051-2CC3-B390-D097-14A267D7BDB3"/>
+<colUsage columnID="2DD75616-ADC0-C2EB-7692-8ED653EA8C93"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="CF4A14B1-2F7C-823A-D346-0970973C70A8" name="odontograma_piezas_FK">

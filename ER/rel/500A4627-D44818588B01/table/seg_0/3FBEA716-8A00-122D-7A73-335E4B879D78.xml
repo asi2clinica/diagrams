@@ -7,22 +7,6 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="usuario_usuario" id="275846AA-F7CD-95F5-4DD0-9312C2116709">
-<createdBy>alex</createdBy>
-<createdTime>2015-08-21 03:15:33 UTC</createdTime>
-<generatorID>Generado por el Usuario</generatorID>
-<ownerDesignName>ER</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<delegate>E93EE87E-4275-7E1C-2FB4-7EE6F3D575EF</delegate>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="7B70B3AE-9C44-7341-7459-96C6BEFF5554" referredColumn="E93EE87E-4275-7E1C-2FB4-7EE6F3D575EF"/>
-</associations>
-</Column>
 <Column name="rol_id" id="69235822-79C0-888B-F0CD-EAD611867C19">
 <createdBy>alex</createdBy>
 <createdTime>2015-08-21 03:16:56 UTC</createdTime>
@@ -38,19 +22,23 @@
 <colAssociation fkAssociation="4AB7D89F-A16E-6CAF-12A0-DE7EE8BDF3AF" referredColumn="433402E2-DBDF-4F26-1AAD-4D9B88ACED42"/>
 </associations>
 </Column>
-</columns>
-<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B99774D1-34A4-FCBA-198A-AE7ADA537C68" name="rol_usuario_usuario_FK">
+<Column name="empleado_persona" id="A3DE06D2-16F7-8897-0D00-7005AA68D3F4">
 <createdBy>alex</createdBy>
-<createdTime>2015-08-21 03:15:33 UTC</createdTime>
+<createdTime>2015-08-21 17:00:23 UTC</createdTime>
 <generatorID>Generado por el Usuario</generatorID>
 <ownerDesignName>ER</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="275846AA-F7CD-95F5-4DD0-9312C2116709"/>
-</indexColumnUsage>
-</ind_PK_UK>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>88A6A37E-C392-2EBE-3E9E-B719E17F5472</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C309981-BFBC-25B9-ABDD-0804BB2A9C5D" referredColumn="88A6A37E-C392-2EBE-3E9E-B719E17F5472"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D5621727-1944-2DCC-2B3C-80880DAFD662" name="rol_usuario_rol_FK">
 <createdBy>alex</createdBy>
 <createdTime>2015-08-21 03:16:56 UTC</createdTime>
@@ -60,6 +48,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="69235822-79C0-888B-F0CD-EAD611867C19"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BFC12E5-03A6-6045-6825-2D1457B03253" name="rol_usuario_empleado_FK">
+<createdBy>alex</createdBy>
+<createdTime>2015-08-21 17:00:23 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3DE06D2-16F7-8897-0D00-7005AA68D3F4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
